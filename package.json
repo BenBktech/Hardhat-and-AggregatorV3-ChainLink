@@ -1,4 +1,6 @@
 {
+  "name": "hardhat fund me",
+  "author": "Ben BK",
   "devDependencies": {
     "@chainlink/contracts": "^0.5.1",
     "@ethersproject/abi": "^5.4.7",
@@ -20,5 +22,10 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network goerli",
+    "coverage": "yarn hardhat coverage"
   }
 }
